@@ -1,0 +1,64 @@
+:root{
+    font-size: 23px;
+}
+
+h4 {
+    margin: 0;
+}
+
+ul, ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    min-height: 12.9em;
+}
+
+li {
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 1em;
+}
+
+.ticket {
+    border: 1px solid blue;
+    border-radius: 2px;
+    width: 70%;
+}
+
+.ticket > button {
+    width: 5em;
+}
+
+.num {
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+.main {
+    width: 80%;
+    display: inline-block;
+}
+
+.sidebar {
+    display: inline-block;
+    border: 1px solid black;
+    height: 50em;
+}
+
+.sideul {
+    min-height: 0;
+}
+
+.sideul > li {
+    display: list-item;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+}
