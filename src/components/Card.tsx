@@ -1,5 +1,6 @@
 import * as React from "react";
 import {useDispatch} from "react-redux";
+import {memo} from "react";
 
 export function Card({ amount, name, kudos }: Props) {
     const dispatch = useDispatch();
@@ -21,6 +22,8 @@ export function Card({ amount, name, kudos }: Props) {
         </div>
     );
 }
+
+export const MemoizedCard = memo(Card)
 
 interface Props {
     amount: number;

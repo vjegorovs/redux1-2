@@ -1,19 +1,13 @@
 import * as React from "react";
-import { MainWindow} from "./MainWindow.js";
 import {createRoot} from "react-dom/client";
 
-import {SideBar} from "./SideBar";
-import {createStore} from "redux";
-import {rootReducer} from "./rootReducer";
 import {Provider} from "react-redux";
-import {composeWithDevTools} from "redux-devtools-extension";
+import type {} from 'redux-thunk/extend-redux'
+import {store} from "./ducks";
+import {MainWindow} from "./components/MainWindow";
+import {SideBar} from "./components/SideBar";
 
 function App() {
-    const store = createStore(
-        rootReducer,
-        composeWithDevTools()
-    )
-
     return (
         <Provider store={store}>
             <h1>My Super Awesome app</h1>
