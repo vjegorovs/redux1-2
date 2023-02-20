@@ -1,3 +1,4 @@
-# Redux 1 Lecture live coding
+# Redux 1 & 2 Lecture live coding
 
-Base Redux functionality
+Redux1: Base Redux functionality
+Redux2: Middlewares
